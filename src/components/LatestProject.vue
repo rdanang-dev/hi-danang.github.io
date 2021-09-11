@@ -53,10 +53,10 @@
                       target="_blank"
                       class="flex hover:text-green-300"
                     >
-                      <fa-icon
+                      <!-- <fa-icon
                         :icon="['fab', 'github-square']"
                         class="text-3xl"
-                      />
+                      /> -->
                       <span class="my-auto px-1">FrontEnd</span>
                     </a>
                     <a
@@ -64,10 +64,10 @@
                       target="_blank"
                       class="flex px-1 hover:text-green-300"
                     >
-                      <fa-icon
+                      <!-- <fa-icon
                         :icon="['fab', 'github-square']"
                         class="text-3xl"
-                      />
+                      /> -->
                       <span class="my-auto px-1">BackEnd</span>
                     </a>
                     <a
@@ -75,10 +75,10 @@
                       target="_blank"
                       class="flex hover:text-green-300"
                     >
-                      <fa-icon
+                      <!-- <fa-icon
                         :icon="['fab', 'youtube-square']"
                         class="text-3xl"
-                      />
+                      /> -->
                       <span class="my-auto px-1">Demo</span>
                     </a>
                   </div>
@@ -133,7 +133,7 @@
                   target="_blank"
                   class="flex hover:text-green-300"
                 >
-                  <fa-icon :icon="['fab', 'github-square']" class="text-3xl" />
+                  <!-- <fa-icon :icon="['fab', 'github-square']" class="text-3xl" /> -->
                   <span class="my-auto px-1">FrontEnd</span>
                 </a>
                 <a
@@ -141,7 +141,7 @@
                   target="_blank"
                   class="flex px-1 hover:text-green-300"
                 >
-                  <fa-icon :icon="['fab', 'github-square']" class="text-3xl" />
+                  <!-- <fa-icon :icon="['fab', 'github-square']" class="text-3xl" /> -->
                   <span class="my-auto px-1">BackEnd</span>
                 </a>
                 <a
@@ -149,7 +149,7 @@
                   target="_blank"
                   class="flex hover:text-green-300"
                 >
-                  <fa-icon :icon="['fab', 'youtube-square']" class="text-3xl" />
+                  <!-- <fa-icon :icon="['fab', 'youtube-square']" class="text-3xl" /> -->
                   <span class="my-auto px-1">Demo</span>
                 </a>
               </div>
@@ -203,10 +203,10 @@
                       target="_blank"
                       class="flex hover:text-green-300"
                     >
-                      <fa-icon
+                      <!-- <fa-icon
                         :icon="['fab', 'github-square']"
                         class="text-3xl"
-                      />
+                      /> -->
                       <span class="my-auto px-1">FrontEnd</span>
                     </a>
                     <a
@@ -214,10 +214,10 @@
                       target="_blank"
                       class="flex px-1 hover:text-green-300"
                     >
-                      <fa-icon
+                      <!-- <fa-icon
                         :icon="['fab', 'github-square']"
                         class="text-3xl"
-                      />
+                      /> -->
                       <span class="my-auto px-1">BackEnd</span>
                     </a>
                     <a
@@ -225,10 +225,10 @@
                       target="_blank"
                       class="flex hover:text-green-300"
                     >
-                      <fa-icon
+                      <!-- <fa-icon
                         :icon="['fab', 'youtube-square']"
                         class="text-3xl"
-                      />
+                      /> -->
                       <span class="my-auto px-1">Demo</span>
                     </a>
                   </div>
@@ -292,7 +292,7 @@
                   target="_blank"
                   class="flex hover:text-green-300"
                 >
-                  <fa-icon :icon="['fab', 'github-square']" class="text-3xl" />
+                  <!-- <fa-icon :icon="['fab', 'github-square']" class="text-3xl" /> -->
                   <span class="my-auto px-1">Source Code</span>
                 </a>
                 <a
@@ -300,7 +300,7 @@
                   target="_blank"
                   class="flex hover:text-green-300"
                 >
-                  <fa-icon :icon="['fab', 'youtube-square']" class="text-3xl" />
+                  <!-- <fa-icon :icon="['fab', 'youtube-square']" class="text-3xl" /> -->
                   <span class="my-auto px-1">Try Me!</span>
                 </a>
               </div>
@@ -357,10 +357,10 @@
                       target="_blank"
                       class="flex hover:text-green-300"
                     >
-                      <fa-icon
+                      <!-- <fa-icon
                         :icon="['fab', 'github-square']"
                         class="text-3xl"
-                      />
+                      /> -->
                       <span class="my-auto px-1">FrontEnd</span>
                     </a>
                     <a
@@ -368,10 +368,10 @@
                       target="_blank"
                       class="flex px-1 hover:text-green-300"
                     >
-                      <fa-icon
+                      <!-- <fa-icon
                         :icon="['fab', 'github-square']"
                         class="text-3xl"
-                      />
+                      /> -->
                       <span class="my-auto px-1">BackEnd</span>
                     </a>
                     <a
@@ -379,10 +379,10 @@
                       target="_blank"
                       class="flex hover:text-green-300"
                     >
-                      <fa-icon
+                      <!-- <fa-icon
                         :icon="['fab', 'youtube-square']"
                         class="text-3xl"
-                      />
+                      /> -->
                       <span class="my-auto px-1">Demo</span>
                     </a>
                   </div>
@@ -442,7 +442,7 @@
                   target="_blank"
                   class="flex hover:text-green-300"
                 >
-                  <fa-icon :icon="['fab', 'github-square']" class="text-3xl" />
+                  <!-- <fa-icon :icon="['fab', 'github-square']" class="text-3xl" /> -->
                   <span class="my-auto px-1">FrontEnd</span>
                 </a>
                 <a
@@ -450,7 +450,7 @@
                   target="_blank"
                   class="flex px-1 hover:text-green-300"
                 >
-                  <fa-icon :icon="['fab', 'github-square']" class="text-3xl" />
+                  <!-- <fa-icon :icon="['fab', 'github-square']" class="text-3xl" /> -->
                   <span class="my-auto px-1">BackEnd</span>
                 </a>
                 <a
@@ -458,7 +458,7 @@
                   target="_blank"
                   class="flex hover:text-green-300"
                 >
-                  <fa-icon :icon="['fab', 'youtube-square']" class="text-3xl" />
+                  <!-- <fa-icon :icon="['fab', 'youtube-square']" class="text-3xl" /> -->
                   <span class="my-auto px-1">Demo</span>
                 </a>
               </div>
@@ -472,6 +472,7 @@
 
 <script>
   export default {
+    name: "LatestProject",
     data() {
       return {
         projectData: {

@@ -2,27 +2,6 @@
   <div class="flex w-full h-screen min-h-screen item-center">
     <div class="flex flex-col py-32 md:pt-16">
       <span class="text-green-500 text-xl">Hi There, i'm</span>
-      <!-- <vue-typed-js
-        :strings="['idho Danang Sanyoto;']"
-        :type-speed="100"
-        :show-cursor="false"
-        :fade-out="true"
-        :loop="true"
-        :content-type="'html'"
-        :fade-out-delay="5000"
-      >
-        <h1
-          class="
-            text-custom-title text-4xl
-            sm:text-5xl
-            md:text-6xl
-            lg:text-7xl
-            xl:text-8xl xl:py-4 xl:-m-2
-          "
-        >
-          R<span class="typing"></span>
-        </h1>
-      </vue-typed-js> -->
       <vue-typer
         :text="['Ridho Danang Sanyoto']"
         :repeat="Infinity"
@@ -34,7 +13,8 @@
         erase-style="backspace"
         :erase-on-complete="false"
         caret-animation="expand"
-        class="text-4xl
+        class="
+            fiveinc:text-4xl
             sm:text-5xl
             md:text-6xl
             lg:text-7xl

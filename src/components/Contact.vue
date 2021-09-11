@@ -191,28 +191,28 @@
                   target="_blank"
                   class="flex text-green-300 my-auto"
                 >
-                  <fa-icon :icon="['fab', 'github-square']" />
+                  <!-- <fa-icon :icon="['fab', 'github-square']" /> -->
                 </a>
                 <a
                   href="https://github.com/rdanang-dev/vue-wiko-pos"
                   target="_blank"
                   class="flex text-green-300 my-auto"
                 >
-                  <fa-icon :icon="['fab', 'facebook-square']" />
+                  <!-- <fa-icon :icon="['fab', 'facebook-square']" /> -->
                 </a>
                 <a
                   href="https://github.com/rdanang-dev/vue-wiko-pos"
                   target="_blank"
                   class="flex text-green-300 my-auto"
                 >
-                  <fa-icon :icon="['fab', 'instagram-square']" />
+                  <!-- <fa-icon :icon="['fab', 'instagram-square']" /> -->
                 </a>
                 <a
                   href="https://github.com/rdanang-dev/vue-wiko-pos"
                   target="_blank"
                   class="flex text-green-300 my-auto"
                 >
-                  <fa-icon :icon="['fab', 'youtube-square']" />
+                  <!-- <fa-icon :icon="['fab', 'youtube-square']" /> -->
                 </a>
               </div>
             </div>

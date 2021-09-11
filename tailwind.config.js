@@ -11,6 +11,9 @@ module.exports = {
           cards: "#A0A0A1",
         },
       },
+      screens: {
+        fiveinc: "360px",
+      },
     },
   },
   variants: {
