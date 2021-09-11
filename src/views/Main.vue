@@ -7,6 +7,15 @@
           <div id="home">
             <Home />
           </div>
+          <div id="about">
+            <About />
+          </div>
+          <div id="project">
+            <latest-project />
+          </div>
+          <div id="contact">
+            <Contact />
+          </div>
         </div>
       </div>
     </div>
@@ -16,9 +25,12 @@
 <script>
   import Navbar from "../components/Navbar.vue"
   import Home from "../components/Home.vue"
+  import About from "../components/About.vue"
+  import Contact from "../components/Contact.vue"
+  import LatestProject from "../components/LatestProject.vue"
   export default {
     name: "Main",
-    components: { Navbar, Home },
+    components: { Navbar, Home, About, Contact, LatestProject },
   }
 </script>
 
