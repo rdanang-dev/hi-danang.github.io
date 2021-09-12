@@ -1,3 +1,4 @@
+const defaultTheme = require("tailwindcss/defaultTheme")
 module.exports = {
   purge: ["./public/index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
@@ -11,8 +12,8 @@ module.exports = {
           cards: "#A0A0A1",
         },
       },
-      screens: {
-        fiveinc: "360px",
+      fontFamily: {
+        mono: ["ChakraPetch", defaultTheme.fontFamily.mono],
       },
     },
   },

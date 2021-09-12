@@ -1,5 +1,5 @@
 <template>
-  <div class="leading-normal tracking-normal">
+  <div class="leading-normal tracking-normal font-mono">
     <div class="flex flex-wrap">
       <div class="w-full bg-custom-background min-h-full">
         <Navbar />
@@ -53,5 +53,9 @@
     border-radius: 8px; /* roundness of the scroll thumb */
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
     height: 10px;
+  }
+
+  .font-mono .text-8xl {
+    word-spacing: -0.4ch;
   }
 </style>

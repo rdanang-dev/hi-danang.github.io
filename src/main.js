@@ -13,7 +13,8 @@ import router from "./router"
 import store from "./store"
 
 //tailwind
-import "tailwindcss/tailwind.css"
+// import "tailwindcss/tailwind.css"
+import "@/assets/css/index.css"
 
 //vue typer
 import VueTyperPlugin from "vue-typer"
