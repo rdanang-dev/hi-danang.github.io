@@ -217,7 +217,6 @@
 </template>
 
 <script>
-  import { mapActions } from "vuex"
   export default {
     data() {
       return {
@@ -233,7 +232,6 @@
       }
     },
     methods: {
-      ...mapActions("contact", ["sentMail"]),
       async onSubmit() {
         this.validate()
         if (Object.keys(this.errors.data).length !== 0) {
@@ -280,7 +278,26 @@
         }
         formData.append("_next", "/#content")
         formData.append("_captcha", false)
-        await this.sentMail({ payload: formData })
+        await this.sentMail(formData)
+      },
+
+      async sentMail(payload) {
+        try {
+          await this.axios.post(
+            "https://formsubmit.co/rdanang.dev@gmail.com",
+            payload
+          )
+          this.$toasted.success("Message Sent!", {
+            duration: 1500,
+            position: "bottom-right",
+          })
+        } catch (error) {
+          console.log(error)
+          this.$toasted.error("Oops, Something Went Wrong!", {
+            duration: 1500,
+            position: "bottom-right",
+          })
+        }
       },
     },
   }
