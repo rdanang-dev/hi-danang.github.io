@@ -35,6 +35,14 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 library.add(faFacebookSquare, faInstagramSquare, faGithubSquare)
 
+//vue toast
+import Toasted from "vue-toasted"
+let options = {
+  position: "bottom-right",
+  duration: "1000",
+}
+Vue.use(Toasted, options)
+
 Vue.component("font-awesome-icon", FontAwesomeIcon)
 
 Vue.config.productionTip = false
