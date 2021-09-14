@@ -1,100 +1,128 @@
 <template>
   <div class="flex w-full min-h-screen items-center">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-      <div class="flex flex-col w-full lg:w-1/2">
-        <div class="hidden lg:flex lg:flex-row">
-          <span class="text-custom-title lg:text-2xl xl:text-3xl w-full"
-            >About Me</span
-          >
-          <hr
-            class="border-green-500 my-auto w-full lg:-ml-40 xl:-ml-60 pr-24"
-          />
-        </div>
-        <div class="flex flex-col p-2 lg:p-0">
-          <p class="pt-4 text-custom-content w-full text-justify">
-            Hello! My name is Danang, My Intrest on Web Developing was Started
-            Back Then When I Was Still at Junior High School, Maybe Because I
-            Spent a Lot of Time on Internet Caffe Back Then, I Start to Knowing
-            and Learn About The Basic Language for Develop a Website Such as
-            HTML, CSS, and PHP, When I was Vocational High School Student,
-            Majoring on RPL or Well Known as Software Engineering, and I Start
-            to Learn About Framework When I Develop My Final Assigment for
-            Achiving Bachelor Degree on Computer Information Systems.
-          </p>
-          <p class="py-2 text-custom-content">
-            Here is Few of My Skills and Expertize
-          </p>
-          <div class="flex justify-between text-green-500">
-            <ul class="list-disc px-6">
-              <li>
-                <span class="text-custom-content">HTML</span>
+    <div
+      class="flex flex-col border border-green-500 text-justify text-custom-content w-full relative"
+    >
+      <span
+        class="absolute -top-4 left-1 bg-custom-background text-white text-2xl px-2"
+        >About Me</span
+      >
+      <div
+        class="flex rounded-full w-40 h-40 mx-auto overflow-hidden mt-4 mb-2"
+      >
+        <img
+          src="@/assets/image/rdanang.jpg"
+          alt=""
+          srcset=""
+          class="object-cover h-full w-full"
+        />
+      </div>
+      <div class="mx-auto pb-1">
+        Hello there Internet Fellas!
+        <img
+          src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif"
+          alt="hi"
+          class="inline w-5"
+        />
+      </div>
+      <div class="tracking-tighter leading-tight">
+        <p class="px-4 pb-3">
+          My name is Ridho Danang Sanyoto, Well known as Mas Danang, but people
+          also call me Iyoy, My intrest on web development was started when I
+          was junior high school student, Maybe because I spent a lot of time on
+          Internet Caffe back then, So I choose Software Engineering for my
+          Vocational High School Majority to learn more about it, and finaly
+          start using Framework when I develop my final assigment for Bachelor
+          Degree.
+        </p>
+        <div class="px-4 flex flex-col text-sm tracking-normal">
+          <span>Language, Tools, Plugin, and Concept :</span>
+          <div class="flex flex-row justify-between">
+            <ul class="list-inside list-disc">
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">HTML</span>
               </li>
-              <li>
-                <span class="text-custom-content">Javascript</span>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">CSS</span>
               </li>
-              <li><span class="text-custom-content">PHP</span></li>
-              <li><span class="text-custom-content">CSS</span></li>
-              <li>
-                <span class="text-custom-content">MySQL</span>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">PHP</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Javascript</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Vue</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Nuxt</span>
               </li>
             </ul>
-            <ul class="list-disc">
-              <li>
-                <span class="text-custom-content">Bootstrap</span>
+            <ul class="list-inside list-disc">
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Laravel</span>
               </li>
-              <li>
-                <span class="text-custom-content">TailwindCSS</span>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Tailwind</span>
               </li>
-              <li>
-                <span class="text-custom-content">Vue JS</span>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Bootstrap</span>
               </li>
-              <li>
-                <span class="text-custom-content">Nuxt JS</span>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Nginx</span>
               </li>
-              <li>
-                <span class="text-custom-content">Laravel</span>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Apache</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">VSCode</span>
               </li>
             </ul>
-            <ul class="list-disc">
-              <li>
-                <span class="text-custom-content">NGINX</span>
+            <ul class="list-inside list-disc">
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">ESLint</span>
               </li>
-              <li>
-                <span class="text-custom-content">Git & Github</span>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Prettier</span>
               </li>
-              <li>
-                <span class="text-custom-content">Linux</span>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">MySQL</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Windows</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Linux</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Sanctum</span>
+              </li>
+            </ul>
+            <ul class="list-inside list-disc">
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Spatie</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Vuex</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">AWS S3</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">SPA</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">REST API</span>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="flex w-full max-w-md m-auto lg:max-w-sm xl:w-1/2 xl:max-w-lg">
-        <div class="">
-          <img
-            src="@/assets/image/rdanang.jpg"
-            alt="rdanang"
-            class="
-              xl:w-9/12
-              mx-auto
-              border-r-8 border-b-8 border-green-500
-              rounded-2xl
-            "
-          />
-        </div>
-      </div>
-      <div class="flex flex-row pb-3 lg:hidden lg:pb-0">
-        <span class="text-custom-title text-xl md:text-3xl w-3/12">
-          About Me
-        </span>
-        <hr class="border-green-500 my-auto w-9/12" />
-      </div>
     </div>
   </div>
 </template>
-
 <script>
   export default {}
 </script>
 
-<style></style>
+<style scoped></style>

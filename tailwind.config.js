@@ -15,6 +15,9 @@ module.exports = {
       fontFamily: {
         mono: ["ChakraPetch", defaultTheme.fontFamily.mono],
       },
+      listStyleType: {
+        square: "square",
+      },
     },
   },
   variants: {
