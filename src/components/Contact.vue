@@ -73,7 +73,7 @@
                   focus:outline-none focus:shadow-outline
                 "
                   type="text"
-                  placeholder="name@doman.tld"
+                  placeholder="Name@Doman.Tld"
                 />
                 <div class="relative h-5">
                   <span
