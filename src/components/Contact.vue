@@ -237,7 +237,7 @@
       async onSubmit() {
         this.validate()
         if (Object.keys(this.errors.data).length !== 0) {
-          this.$toast.error("Oops, Something Went Wrong!", {
+          this.$toasted.error("Oops, Something Went Wrong!", {
             duration: 1500,
             position: "bottom-right",
           })
