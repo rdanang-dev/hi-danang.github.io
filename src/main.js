@@ -24,6 +24,19 @@ Vue.use(VueTyperPlugin)
 import VueScrollTo from "vue-scrollto"
 Vue.use(VueScrollTo)
 
+// vue font awesome
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
+import { library } from "@fortawesome/fontawesome-svg-core"
+// import { faSquare } from "@fortawesome/free-solid-svg-icons"
+import {
+  faFacebookSquare,
+  faInstagramSquare,
+  faGithubSquare,
+} from "@fortawesome/free-brands-svg-icons"
+library.add(faFacebookSquare, faInstagramSquare, faGithubSquare)
+
+Vue.component("font-awesome-icon", FontAwesomeIcon)
+
 Vue.config.productionTip = false
 
 new Vue({

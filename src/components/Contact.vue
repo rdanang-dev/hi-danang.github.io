@@ -1,27 +1,29 @@
 <template>
   <div class="flex w-full min-h-screen items-center justify-center">
-    <div class="flex flex-col w-9/12">
+    <div class="flex flex-col w-full">
       <div class="flex flex-row">
-        <span class="text-custom-title text-xl md:text-3xl w-32 md:w-40"
+        <span
+          class="text-custom-title text-xl md:text-3xl pr-2 bg-custom-background"
           >Contact</span
         >
         <hr class="border-green-500 my-auto w-full" />
       </div>
-      <div class="flex flex-col pt-6 px-2">
-        <form @submit.prevent="onSubmit">
-          <div class="flex flex-row">
-            <div class="pr-2 w-1/2">
-              <label
-                class="block mb-2 text-sm font-bold text-custom-content"
-                for="name"
-              >
-                Name
-              </label>
-              <input
-                id="name"
-                v-model="formBind.name"
-                name="name"
-                class="
+      <div class="flex flex-row">
+        <div class="flex flex-col w-full pt-6 px-2">
+          <form @submit.prevent="onSubmit">
+            <div class="flex flex-row">
+              <div class="pr-2 w-1/2">
+                <label
+                  class="block mb-2 text-sm font-bold text-custom-content"
+                  for="name"
+                >
+                  Name
+                </label>
+                <input
+                  id="name"
+                  v-model="formBind.name"
+                  name="name"
+                  class="
                   w-full
                   px-3
                   py-2
@@ -34,30 +36,30 @@
                   appearance-none
                   focus:outline-none focus:shadow-outline
                 "
-                type="text"
-                placeholder="Name"
-              />
-              <div class="relative h-5">
-                <span
-                  v-if="errors.data && errors.data.name"
-                  class="text-sm text-red-500 absolute top-1 left-0"
-                >
-                  {{ errors.data.name }}
-                </span>
+                  type="text"
+                  placeholder="Name"
+                />
+                <div class="relative h-5">
+                  <span
+                    v-if="errors.data && errors.data.name"
+                    class="text-sm text-red-500 absolute top-1 left-0"
+                  >
+                    {{ errors.data.name }}
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="pl-2 w-1/2">
-              <label
-                class="block mb-2 text-sm font-bold text-custom-content"
-                for="email"
-              >
-                Email
-              </label>
-              <input
-                id="email"
-                v-model="formBind.email"
-                name="email"
-                class="
+              <div class="pl-2 w-1/2">
+                <label
+                  class="block mb-2 text-sm font-bold text-custom-content"
+                  for="email"
+                >
+                  Email
+                </label>
+                <input
+                  id="email"
+                  v-model="formBind.email"
+                  name="email"
+                  class="
                   w-full
                   px-3
                   py-2
@@ -70,31 +72,31 @@
                   appearance-none
                   focus:outline-none focus:shadow-outline
                 "
-                type="text"
-                placeholder="yourname@company.domain"
-              />
-              <div class="relative h-5">
-                <span
-                  v-if="errors.data && errors.data.email"
-                  class="text-sm text-red-500 absolute top-1 left-0"
-                >
-                  {{ errors.data.email }}
-                </span>
+                  type="text"
+                  placeholder="name@doman.tld"
+                />
+                <div class="relative h-5">
+                  <span
+                    v-if="errors.data && errors.data.email"
+                    class="text-sm text-red-500 absolute top-1 left-0"
+                  >
+                    {{ errors.data.email }}
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="py-3">
-            <label
-              class="block mb-2 text-sm font-bold text-custom-content"
-              for="subject"
-            >
-              Subject
-            </label>
-            <input
-              id="subject"
-              v-model="formBind.subject"
-              name="_subject"
-              class="
+            <div class="py-3">
+              <label
+                class="block mb-2 text-sm font-bold text-custom-content"
+                for="subject"
+              >
+                Subject
+              </label>
+              <input
+                id="subject"
+                v-model="formBind.subject"
+                name="_subject"
+                class="
                 w-full
                 px-3
                 py-2
@@ -107,33 +109,33 @@
                 appearance-none
                 focus:outline-none focus:shadow-outline
               "
-              type="text"
-              placeholder="Subject"
-            />
-            <div class="relative h-5">
-              <span
-                v-if="errors.data && errors.data.subject"
-                class="text-sm text-red-500 absolute top-1 left-0"
-              >
-                {{ errors.data.subject }}
-              </span>
+                type="text"
+                placeholder="Subject"
+              />
+              <div class="relative h-5">
+                <span
+                  v-if="errors.data && errors.data.subject"
+                  class="text-sm text-red-500 absolute top-1 left-0"
+                >
+                  {{ errors.data.subject }}
+                </span>
+              </div>
             </div>
-          </div>
-          <div class="pb-6">
-            <label
-              class="block mb-2 text-sm font-bold text-custom-content"
-              for="content"
-            >
-              Content
-            </label>
-            <div class="relative">
-              <textarea
-                id="content"
-                v-model="formBind.content"
-                name="message"
-                maxlength="300"
-                rows="8"
-                class="
+            <div class="pb-6">
+              <label
+                class="block mb-2 text-sm font-bold text-custom-content"
+                for="content"
+              >
+                Content
+              </label>
+              <div class="relative">
+                <textarea
+                  id="content"
+                  v-model="formBind.content"
+                  name="message"
+                  maxlength="300"
+                  rows="8"
+                  class="
                   w-full
                   px-3
                   py-2
@@ -146,10 +148,10 @@
                   appearance-none
                   focus:outline-none focus:shadow-outline
                 "
-                placeholder="Content"
-              />
-              <span
-                class="
+                  placeholder="Content"
+                />
+                <span
+                  class="
                   absolute
                   bottom-8
                   right-3
@@ -158,66 +160,57 @@
                   rounded-lg
                   text-custom-title
                 "
-                >{{ 300 - formBind.content.length }}</span
-              >
-              <div class="relative h-5">
-                <span
-                  v-if="errors.data && errors.data.content"
-                  class="text-sm text-red-500 absolute top-0 left-0"
+                  >{{ 300 - formBind.content.length }}</span
                 >
-                  {{ errors.data.content }}
-                </span>
+                <div class="relative h-5">
+                  <span
+                    v-if="errors.data && errors.data.content"
+                    class="text-sm text-red-500 absolute top-0 left-0"
+                  >
+                    {{ errors.data.content }}
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="flex flex-row justify-between mt-2">
-              <button
-                type="submit"
-                class="
+              <div class="flex flex-row justify-between mt-2">
+                <button
+                  type="submit"
+                  class="
                   border border-green-500
                   text-green-500
                   p-3
                   max-w-max
                   hover:border-green-300 hover:text-green-300
                 "
-              >
-                Submit!
-              </button>
-              <div class="flex flex-row space-x-2 text-4xl">
-                <span class="text-2xl my-auto text-custom-content"
-                  >Contact Me!</span
                 >
-                <a
-                  href="https://github.com/rdanang-dev/vue-wiko-pos"
-                  target="_blank"
-                  class="flex text-green-300 my-auto"
-                >
-                  <!-- <fa-icon :icon="['fab', 'github-square']" /> -->
-                </a>
-                <a
-                  href="https://github.com/rdanang-dev/vue-wiko-pos"
-                  target="_blank"
-                  class="flex text-green-300 my-auto"
-                >
-                  <!-- <fa-icon :icon="['fab', 'facebook-square']" /> -->
-                </a>
-                <a
-                  href="https://github.com/rdanang-dev/vue-wiko-pos"
-                  target="_blank"
-                  class="flex text-green-300 my-auto"
-                >
-                  <!-- <fa-icon :icon="['fab', 'instagram-square']" /> -->
-                </a>
-                <a
-                  href="https://github.com/rdanang-dev/vue-wiko-pos"
-                  target="_blank"
-                  class="flex text-green-300 my-auto"
-                >
-                  <!-- <fa-icon :icon="['fab', 'youtube-square']" /> -->
-                </a>
+                  Submit!
+                </button>
               </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
+        <div class="flex flex-col my-auto pl-2 space-y-3">
+          <a href="https://www.facebook.com/ridho.iyoy" target="blank">
+            <font-awesome-icon
+              :icon="['fab', 'facebook-square']"
+              class="fa-3x"
+              style="color: #1877F2;"
+            />
+          </a>
+          <a href="https://www.instagram.com/ikan_gondrong" target="blank">
+            <font-awesome-icon
+              :icon="['fab', 'instagram-square']"
+              class="fa-3x"
+              style="color: #E4405F;"
+            />
+          </a>
+          <a href="https://github.com/rdanang-dev" target="blank">
+            <font-awesome-icon
+              :icon="['fab', 'github-square']"
+              class="fa-3x"
+              style="color: #181717;"
+            />
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -293,4 +286,17 @@
   }
 </script>
 
-<style></style>
+<style>
+  .fa-3x {
+    background-image: linear-gradient(
+      to bottom,
+      transparent 10%,
+      white 20%,
+      white 93%,
+      transparent 1%
+    );
+    background-size: 83%;
+    background-position: 60% 0;
+    background-repeat: no-repeat;
+  }
+</style>
