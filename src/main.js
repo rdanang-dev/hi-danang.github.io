@@ -27,13 +27,22 @@ Vue.use(VueScrollTo)
 // vue font awesome
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 import { library } from "@fortawesome/fontawesome-svg-core"
-// import { faSquare } from "@fortawesome/free-solid-svg-icons"
+import { faHome, faUserTie, faCode } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 import {
   faFacebookSquare,
   faInstagramSquare,
   faGithubSquare,
 } from "@fortawesome/free-brands-svg-icons"
-library.add(faFacebookSquare, faInstagramSquare, faGithubSquare)
+library.add(
+  faFacebookSquare,
+  faInstagramSquare,
+  faGithubSquare,
+  faHome,
+  faUserTie,
+  faCode,
+  faEnvelope
+)
 
 //vue toast
 import Toasted from "vue-toasted"

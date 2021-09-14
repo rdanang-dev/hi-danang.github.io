@@ -303,7 +303,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   .fa-3x {
     background-image: linear-gradient(
       to bottom,

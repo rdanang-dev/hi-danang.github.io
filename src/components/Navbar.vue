@@ -85,8 +85,8 @@
         </div>
         <div class="flex">
           <!-- Banner -->
-          <div>
-            <a href="#" class="flex items-center py-1 mr-2 md:py-4 md:px-2">
+          <div v-scroll-to="{ el: '#home', offset: -50 }">
+            <a class="flex items-center py-1 mr-2 md:py-4 md:px-2">
               <img
                 src="@/assets/image/mini_logo.jpeg"
                 alt="mini_logo"
@@ -95,8 +95,7 @@
               <span
                 class="
                   font-semibold
-                  text-gray-300 text-lg
-                  hover:text-green-500
+                  text-gray-300 text-lg                  
                   pl-2
                 "
                 >RDanang</span
@@ -141,11 +140,83 @@
         </div>
       </div>
       <div class="md:hidden" :class="open ? '' : 'hidden'">
-        <div class="grid grid-cols-4 text-white">
-          <div></div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
+        <div class="grid grid-cols-4 text-white bg-black bg-opacity-95">
+          <a
+            v-scroll-to="{ el: '#home', offset: -50 }"
+            class="flex flex-col justify-center border-b border-gray-700 w-full"
+            @click="posititon = 'home'"
+          >
+            <div class="flex flex-col p-2">
+              <font-awesome-icon
+                :icon="['fas', 'home']"
+                class="fa-lg mx-auto"
+                :class="posititon == 'home' ? 'text-green-500' : 'text-white'"
+              />
+              <span
+                class="mx-auto text-sm"
+                :class="posititon == 'home' ? isActive.true : isActive.false"
+                >Home</span
+              >
+            </div>
+          </a>
+          <a
+            v-scroll-to="{ el: '#about', offset: 30 }"
+            class="flex flex-col justify-center border-b border-gray-700 w-full"
+            @click="posititon = 'about'"
+          >
+            <div class="flex flex-col p-2">
+              <font-awesome-icon
+                :icon="['fas', 'user-tie']"
+                class="fa-lg mx-auto"
+                :class="posititon == 'about' ? 'text-green-500' : 'text-white'"
+              />
+              <span
+                class="mx-auto text-sm"
+                :class="posititon == 'about' ? isActive.true : isActive.false"
+                >About Me</span
+              >
+            </div>
+          </a>
+          <a
+            v-scroll-to="{ el: '#project', offset: 60 }"
+            class="flex flex-col justify-center border-b border-gray-700 w-full"
+            @click="posititon = 'project'"
+          >
+            <div class="flex flex-col p-2">
+              <font-awesome-icon
+                :icon="['fas', 'code']"
+                class="fa-lg mx-auto"
+                :class="
+                  posititon == 'project' ? 'text-green-500' : 'text-white'
+                "
+              />
+              <span
+                class="mx-auto text-sm"
+                :class="posititon == 'project' ? isActive.true : isActive.false"
+                >Project</span
+              >
+            </div>
+          </a>
+          <a
+            v-scroll-to="{ el: '#contact' }"
+            class="flex flex-col justify-center border-b border-gray-700 w-full"
+            @click="posititon = 'contact'"
+          >
+            <div class="flex flex-col p-2">
+              <font-awesome-icon
+                :icon="['far', 'envelope']"
+                class="fa-lg mx-auto"
+                :class="
+                  posititon == 'contact' ? 'text-green-500' : 'text-white'
+                "
+              />
+              <span
+                class="mx-auto text-sm"
+                :class="posititon == 'contact' ? isActive.true : isActive.false"
+                >Contact</span
+              >
+            </div>
+          </a>
         </div>
       </div>
     </div>
