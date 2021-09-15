@@ -220,7 +220,10 @@
               style="color: #25D366;"
             />
           </a>
-          <a href="www.linkedin.com/in/ridho-danang-sanyoto-814074221">
+          <a
+            href="https://www.linkedin.com/in/ridho-danang-sanyoto"
+            target="blank"
+          >
             <font-awesome-icon
               :icon="['fab', 'linkedin']"
               class="fa-3x"

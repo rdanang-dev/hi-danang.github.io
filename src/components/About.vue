@@ -37,7 +37,7 @@
         </p>
         <div class="px-4 flex flex-col text-sm tracking-normal">
           <span>Language, Tools, Plugin, and Concept :</span>
-          <div class="flex flex-row justify-between">
+          <div class="flex flex-row justify-between pb-2">
             <ul class="list-inside list-disc">
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">HTML</span>
