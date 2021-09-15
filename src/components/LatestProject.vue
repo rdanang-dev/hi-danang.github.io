@@ -42,7 +42,16 @@
               <div
                 class="text-justify leading-tight tracking-tighter lg:leading-normal py-2 lg:pt-5 text-custom-content"
               >
-                {{ val.desc }}
+                <p>{{ val.desc }}</p>
+                <div class="space-x-1 space-y-1 max-w-64">
+                  <span class="block py-2">Tags:</span>
+                  <span
+                    v-for="tag in val.tags"
+                    :key="tag"
+                    class="inline-block border border-dotted border-green-500 tracking-normal px-2"
+                    >{{ tag }}</span
+                  >
+                </div>
               </div>
             </div>
           </div>
