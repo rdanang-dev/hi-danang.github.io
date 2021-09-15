@@ -20,9 +20,9 @@
       <div class="mx-auto pb-1">
         Hello there Internet Fellas!
         <img
-          src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif"
-          alt="hi"
-          class="inline w-5"
+          src="@/assets/image/waving-hand-joypixels.gif"
+          alt="hi-gif-from-joypixels"
+          class="inline w-5 pb-2"
         />
       </div>
       <div class="tracking-tighter leading-tight">

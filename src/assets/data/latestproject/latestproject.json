@@ -1,0 +1,35 @@
+{
+"data": [
+    {
+      "image": "wisatakopi.png",
+      "title": "WikoPOS",
+      "desc":
+        "Wisata Kopi Point of Sales, Web-Based App for managing Transaction Data and Products, Print Invoice, See or Print the Daily, Weekly, Monthly or Yearly income.",
+      "tags": [
+        "VueJS",
+        "TailwindCSS",
+        "Laravel",
+        "AWS S3",
+        "Spatie",
+        "Laravel Sanctum",
+        "MDI Icons",
+        "Vue Toast",
+        "Sweet Alert"
+      ]
+    },
+    {
+      "image": "wisatakopi.png",
+      "title": "Art3mis",
+      "desc":
+        "Battle color by tap, inspired by FingerBattle on Appstore by Rafael Rzendaal, named from Ready Player One Character Art3mis",
+      "tags": ["VueJS", "TailwindCSS"]
+    },
+    {
+      "image": "wisatakopi.png",
+      "title": "Maticss",
+      "desc":
+        "Matics (Mager Ngetics) made with Native Web Speech API, build with vuejs and tailwindCSS",
+      "tags": ["VueJS", "TailwindCSS", "Vue-Toasted"]
+    }
+  ]
+}
