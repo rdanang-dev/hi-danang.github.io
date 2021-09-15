@@ -33,11 +33,15 @@ import {
   faFacebookSquare,
   faInstagramSquare,
   faGithubSquare,
+  faYoutubeSquare,
+  faWhatsappSquare,
 } from "@fortawesome/free-brands-svg-icons"
 library.add(
   faFacebookSquare,
   faInstagramSquare,
   faGithubSquare,
+  faYoutubeSquare,
+  faWhatsappSquare,
   faHome,
   faUserTie,
   faCode,

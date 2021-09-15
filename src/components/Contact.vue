@@ -210,6 +210,16 @@
               style="color: #181717;"
             />
           </a>
+          <a
+            href="https://wa.me/+6285891728757?text=Hallo%20Danang%2C%20I%20liked%20to%20use%20your%20service%2C%20please%20contact%20me%20at%20%2E%2E%2E%2E%2E"
+            target="blank"
+          >
+            <font-awesome-icon
+              :icon="['fab', 'whatsapp-square']"
+              class="fa-3x"
+              style="color: #25D366;"
+            />
+          </a>
         </div>
       </div>
     </div>

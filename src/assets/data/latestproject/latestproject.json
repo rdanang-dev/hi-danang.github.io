@@ -21,14 +21,14 @@
       "image": "wisatakopi.png",
       "title": "Art3mis",
       "desc":
-        "Battle color by tap, inspired by FingerBattle on Appstore by Rafael Rzendaal, named from Ready Player One Character Art3mis",
+        "Battle color by tapping on your side, inspired by FingerBattle on Appstore by Rafael Rzendaal, named from Ready Player One Character Art3mis",
       "tags": ["VueJS", "TailwindCSS"]
     },
     {
       "image": "wisatakopi.png",
-      "title": "Maticss",
+      "title": "Matics",
       "desc":
-        "Matics (Mager Ngetics) made with Native Web Speech API, build with vuejs and tailwindCSS",
+        "Web-based Voice Recognition App for turning your voice into text",
       "tags": ["VueJS", "TailwindCSS", "Vue-Toasted"]
     }
   ]

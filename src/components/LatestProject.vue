@@ -13,7 +13,7 @@
         v-for="(val, index) in data"
         :key="index"
       >
-        <div class="pt-8 relative">
+        <div class="pt-8">
           <div
             class="flex flex-col rounded-t-3xl rounded-b-3xl"
             :class="
@@ -31,11 +31,15 @@
               "
             />
             <div
-              class="flex flex-col px-3 pt-2 border-dashed border-t border-b border-green-500"
+              class="flex flex-col px-3 pt-2 border-dashed lg:border-t border-b border-l border-r rounded-bl-3xl rounded-br-3xl border-green-500 relative"
               :class="
                 (index + 1) % 2 === 0
-                  ? ['rounded-tl-3xl rounded-bl-3xl border-l']
-                  : ['rounded-tr-3xl rounded-br-3xl border-r']
+                  ? [
+                      'lg:border-l lg:rounded-tl-3xl lg:rounded-bl-3xl lg:rounded-br-none lg:border-r-0',
+                    ]
+                  : [
+                      'lg:border-r lg:rounded-tr-3xl lg:rounded-br-3xl lg:rounded-bl-none lg:border-l-0',
+                    ]
               "
             >
               <span class="text-white">{{ val.title }}</span>
@@ -43,7 +47,7 @@
                 class="text-justify leading-tight tracking-tighter lg:leading-normal py-2 lg:pt-5 text-custom-content"
               >
                 <p>{{ val.desc }}</p>
-                <div class="space-x-1 space-y-1 max-w-64">
+                <div class="space-x-1 space-y-1 max-w-64 pb-14 lg:pb-0">
                   <span class="block py-2">Tags:</span>
                   <span
                     v-for="tag in val.tags"
@@ -52,6 +56,28 @@
                     >{{ tag }}</span
                   >
                 </div>
+              </div>
+              <div
+                class="flex justify-end p-2 absolute bottom-0 right-2 space-x-2 text-green-500"
+              >
+                <a href="https://github.com/rdanang-dev" target="blank">
+                  <font-awesome-icon
+                    :icon="['fab', 'github-square']"
+                    class="fa-2x"
+                  />
+                </a>
+                <a href="https://github.com/rdanang-dev" target="blank">
+                  <font-awesome-icon
+                    :icon="['fab', 'youtube-square']"
+                    class="fa-2x"
+                  />
+                </a>
+                <a href="https://github.com/rdanang-dev" target="blank">
+                  <font-awesome-icon
+                    :icon="['fab', 'github-square']"
+                    class="fa-2x"
+                  />
+                </a>
               </div>
             </div>
           </div>
