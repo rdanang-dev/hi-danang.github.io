@@ -148,7 +148,7 @@
                   appearance-none
                   focus:outline-none focus:shadow-outline
                 "
-                  placeholder="Content"
+                  placeholder="Leave your massage here.."
                 />
                 <span
                   class="
@@ -188,7 +188,7 @@
             </div>
           </form>
         </div>
-        <div class="flex flex-col mt-8 pl-2 space-y-2">
+        <div class="flex flex-col mt-10 pl-2 space-y-2">
           <a href="https://www.facebook.com/ridho.iyoy" target="blank">
             <font-awesome-icon
               :icon="['fab', 'facebook-square']"
@@ -220,7 +220,7 @@
               style="color: #25D366;"
             />
           </a>
-          <a href="mailto:rdanang.dev@gmail.com">
+          <a href="www.linkedin.com/in/ridho-danang-sanyoto-814074221">
             <font-awesome-icon
               :icon="['fab', 'linkedin']"
               class="fa-3x"
