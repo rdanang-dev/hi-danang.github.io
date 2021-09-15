@@ -27,7 +27,12 @@ Vue.use(VueScrollTo)
 // vue font awesome
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 import { library } from "@fortawesome/fontawesome-svg-core"
-import { faHome, faUserTie, faCode } from "@fortawesome/free-solid-svg-icons"
+import {
+  faHome,
+  faUserTie,
+  faCode,
+  faEnvelopeSquare,
+} from "@fortawesome/free-solid-svg-icons"
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 import {
   faFacebookSquare,
@@ -35,16 +40,20 @@ import {
   faGithubSquare,
   faYoutubeSquare,
   faWhatsappSquare,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
+
 library.add(
   faFacebookSquare,
   faInstagramSquare,
   faGithubSquare,
   faYoutubeSquare,
   faWhatsappSquare,
+  faLinkedin,
   faHome,
   faUserTie,
   faCode,
+  faEnvelopeSquare,
   faEnvelope
 )
 

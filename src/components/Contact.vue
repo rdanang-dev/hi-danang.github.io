@@ -188,7 +188,7 @@
             </div>
           </form>
         </div>
-        <div class="flex flex-col my-auto pl-2 space-y-3">
+        <div class="flex flex-col mt-8 pl-2 space-y-2">
           <a href="https://www.facebook.com/ridho.iyoy" target="blank">
             <font-awesome-icon
               :icon="['fab', 'facebook-square']"
@@ -218,6 +218,20 @@
               :icon="['fab', 'whatsapp-square']"
               class="fa-3x"
               style="color: #25D366;"
+            />
+          </a>
+          <a href="mailto:rdanang.dev@gmail.com">
+            <font-awesome-icon
+              :icon="['fab', 'linkedin']"
+              class="fa-3x"
+              style="color: #0A66C2;"
+            />
+          </a>
+          <a href="mailto:rdanang.dev@gmail.com">
+            <font-awesome-icon
+              :icon="['fas', 'envelope-square']"
+              class="fa-3x"
+              style="color: #EA4335;"
             />
           </a>
         </div>
