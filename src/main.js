@@ -24,16 +24,19 @@ Vue.use(VueTyperPlugin)
 import VueScrollTo from "vue-scrollto"
 Vue.use(VueScrollTo)
 
-// vue font awesome
+// font awesome core
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
-import { library } from "@fortawesome/fontawesome-svg-core"
+
+// font awesoome solid icons
 import {
   faHome,
   faUserTie,
   faCode,
   faEnvelopeSquare,
+  faExternalLinkSquareAlt,
 } from "@fortawesome/free-solid-svg-icons"
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
+
+//font awesome brands icon
 import {
   faFacebookSquare,
   faInstagramSquare,
@@ -43,6 +46,11 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
 
+//font awesome regular icons
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
+
+//font awesome library
+import { library } from "@fortawesome/fontawesome-svg-core"
 library.add(
   faFacebookSquare,
   faInstagramSquare,
@@ -54,6 +62,7 @@ library.add(
   faUserTie,
   faCode,
   faEnvelopeSquare,
+  faExternalLinkSquareAlt,
   faEnvelope
 )
 
