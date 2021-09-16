@@ -142,7 +142,7 @@
       <div class="md:hidden" :class="open ? '' : 'hidden'">
         <div class="grid grid-cols-4 text-white bg-black bg-opacity-95">
           <a
-            v-scroll-to="{ el: '#home', offset: -50 }"
+            v-scroll-to="{ el: '#home', offset: -1000 }"
             class="flex flex-col justify-center border-b border-gray-700 w-full"
             @click="posititon = 'home'"
           >
@@ -160,7 +160,7 @@
             </div>
           </a>
           <a
-            v-scroll-to="{ el: '#about', offset: 20 }"
+            v-scroll-to="{ el: '#about', offset: 60 }"
             class="flex flex-col justify-center border-b border-gray-700 w-full"
             @click="posititon = 'about'"
           >
@@ -198,7 +198,7 @@
             </div>
           </a>
           <a
-            v-scroll-to="{ el: '#contact' }"
+            v-scroll-to="{ el: '#contact', offset: 1000 }"
             class="flex flex-col justify-center border-b border-gray-700 w-full"
             @click="posititon = 'contact'"
           >
