@@ -1,13 +1,29 @@
 <template>
   <div class="flex w-full item-center">
-    <div class="py-32">
+    <div class="py-32 flex flex-col">
+      <!-- heading -->
       <div class="flex flex-row">
         <span class="text-custom-title text-xl md:text-3xl pr-2 min-w-max"
-          >Latest Project</span
+          >Projects</span
         >
         <hr class="border-green-500 my-auto w-full" />
       </div>
 
+      <!-- some desc -->
+      <div class="text-lg text-custom-title pt-5 md:text-2xl">
+        <span
+          >Here is some project that i do, you can also check the other on my
+        </span>
+        <a
+          href="https://github.com/rdanang-dev"
+          target="blank"
+          class="text-green-500 hover:underline"
+          >github</a
+        >
+        <span> !</span>
+      </div>
+
+      <!-- Projects -->
       <div
         class="flex flex-col w-full"
         v-for="(val, index) in data"
@@ -22,14 +38,16 @@
           >
             <img
               :src="require(`@/assets/image/latestproject/${val.image}`)"
-              alt="Wisata Kopi"
-              class="w-full lg:w-9/12 rounded-t-3xl"
+              class="w-full lg:w-9/12 relative"
               :class="
                 (index + 1) % 2 === 0
                   ? ['lg:rounded-br-3xl lg:rounded-t-none lg:rounded-tr-3xl']
                   : ['lg:rounded-bl-3xl lg:rounded-t-none lg:rounded-tl-3xl']
               "
             />
+            <div class="flex absolute border border-red-500">
+              im absolute!
+            </div>
             <div
               class="flex flex-col px-3 pt-2 border-dashed lg:border-t border-b border-l border-r rounded-bl-3xl rounded-br-3xl border-green-500 relative"
               :class="
@@ -42,7 +60,7 @@
                     ]
               "
             >
-              <span class="text-white">{{ val.title }}</span>
+              <span class="text-custom-title text-2xl">{{ val.title }}</span>
               <div
                 class="text-justify leading-tight tracking-tighter lg:leading-normal py-2 lg:pt-5 text-custom-content"
               >

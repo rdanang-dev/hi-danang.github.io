@@ -127,7 +127,7 @@
             class="py-4 px-2 font-semibold"
             :class="posititon == 'project' ? isActive.true : isActive.false"
             @click="posititon = 'project'"
-            >Latest Project</a
+            >Projects</a
           >
           <a
             v-scroll-to="{ el: '#contact', offset: -40 }"
@@ -160,7 +160,7 @@
             </div>
           </a>
           <a
-            v-scroll-to="{ el: '#about', offset: 30 }"
+            v-scroll-to="{ el: '#about', offset: 15 }"
             class="flex flex-col justify-center border-b border-gray-700 w-full"
             @click="posititon = 'about'"
           >
@@ -178,7 +178,7 @@
             </div>
           </a>
           <a
-            v-scroll-to="{ el: '#project', offset: 40 }"
+            v-scroll-to="{ el: '#project', offset: 108 }"
             class="flex flex-col justify-center border-b border-gray-700 w-full"
             @click="posititon = 'project'"
           >
@@ -193,7 +193,7 @@
               <span
                 class="mx-auto text-sm"
                 :class="posititon == 'project' ? isActive.true : isActive.false"
-                >Project</span
+                >Projects</span
               >
             </div>
           </a>
