@@ -160,7 +160,7 @@
             </div>
           </a>
           <a
-            v-scroll-to="{ el: '#about', offset: 15 }"
+            v-scroll-to="{ el: '#about', offset: 20 }"
             class="flex flex-col justify-center border-b border-gray-700 w-full"
             @click="posititon = 'about'"
           >
@@ -178,7 +178,7 @@
             </div>
           </a>
           <a
-            v-scroll-to="{ el: '#project', offset: 108 }"
+            v-scroll-to="{ el: '#project', offset: 110 }"
             class="flex flex-col justify-center border-b border-gray-700 w-full"
             @click="posititon = 'project'"
           >
