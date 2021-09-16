@@ -35,7 +35,7 @@
         <a :href="value.links ? value.links : value.demo" target="_blank">
           <img
             :src="require(`@/assets/image/projects/${value.image}`)"
-            class="w-full h-full rounded-t-3xl border border-green-500 object-center"
+            class="w-full h-60 lg:h-full rounded-t-3xl border border-green-500 object-center"
             :class="
               (index + 1) % 2 === 0
                 ? ['lg:rounded-br-3xl lg:rounded-t-none lg:rounded-tr-3xl']
