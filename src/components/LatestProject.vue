@@ -105,22 +105,13 @@
 </template>
 
 <script>
-    import projectData from "../assets/data/latestproject/latestproject.json"
-    export default {
-      name: "LatestProject",
-      data() {
-        return {
-          data: projectData.data,
-        }
-      },
-  <<<<<<< HEAD
-      methods: {
-        redirect(value, target = "_blank") {
-          // console.log(value, target)
-          window.open = (value, target)
-        },
-      },
-  =======
-  >>>>>>> dev
-    }
+  import projectData from "../assets/data/latestproject/latestproject.json"
+  export default {
+    name: "LatestProject",
+    data() {
+      return {
+        data: projectData.data,
+      }
+    },
+  }
 </script>
