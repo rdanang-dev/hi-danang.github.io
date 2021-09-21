@@ -32,18 +32,19 @@
         v-for="(value, index) in data"
         :key="index"
       >
-        <img
-          :src="require(`@/assets/image/projects/${value.image}`)"
-          class="w-full h-full lg:w-9/12 relative rounded-t-3xl border border-green-500"
-          :class="
-            (index + 1) % 2 === 0
-              ? ['lg:rounded-br-3xl lg:rounded-t-none lg:rounded-tr-3xl']
-              : ['lg:rounded-bl-3xl lg:rounded-t-none lg:rounded-tl-3xl']
-          "
-          @click="redirect(value.links ? value.links : value.demo)"
-        />
+        <a :href="value.links ? value.links : value.demo" target="_blank">
+          <img
+            :src="require(`@/assets/image/projects/${value.image}`)"
+            class="w-full h-60 lg:h-full rounded-t-3xl border border-green-500 object-center"
+            :class="
+              (index + 1) % 2 === 0
+                ? ['lg:rounded-br-3xl lg:rounded-t-none lg:rounded-tr-3xl']
+                : ['lg:rounded-bl-3xl lg:rounded-t-none lg:rounded-tl-3xl']
+            "
+          />
+        </a>
         <div
-          class="flex flex-col px-3 pt-2 border-dashed lg:border-t border-b border-l border-r rounded-bl-3xl rounded-br-3xl border-green-500 relative"
+          class="flex flex-col px-3 pt-2 border-dashed lg:border-t border-b border-l border-r rounded-bl-3xl rounded-br-3xl border-green-500 relative lg:w-7/12"
           :class="
             (index + 1) % 2 === 0
               ? [
@@ -104,19 +105,22 @@
 </template>
 
 <script>
-  import projectData from "../assets/data/latestproject/latestproject.json"
-  export default {
-    name: "LatestProject",
-    data() {
-      return {
-        data: projectData.data,
-      }
-    },
-    methods: {
-      redirect(value, target = "_blank") {
-        // console.log(value, target)
-        window.open = (value, target)
+    import projectData from "../assets/data/latestproject/latestproject.json"
+    export default {
+      name: "LatestProject",
+      data() {
+        return {
+          data: projectData.data,
+        }
       },
-    },
-  }
+  <<<<<<< HEAD
+      methods: {
+        redirect(value, target = "_blank") {
+          // console.log(value, target)
+          window.open = (value, target)
+        },
+      },
+  =======
+  >>>>>>> dev
+    }
 </script>
