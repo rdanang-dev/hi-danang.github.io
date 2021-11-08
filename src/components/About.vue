@@ -38,7 +38,7 @@
           Framework when I develop my final assigment for Bachelor Degree.
         </p>
         <div class="px-4 flex flex-col text-sm tracking-normal lg:text-lg">
-          <span>Language, Tools, Plugin, and Concept :</span>
+          <span>Language, Tools and Concept :</span>
           <div class="flex flex-row justify-between pb-2">
             <ul class="list-inside list-disc">
               <li class="text-green-500">
