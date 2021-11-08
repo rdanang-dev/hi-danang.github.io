@@ -37,7 +37,7 @@
         >
         <div class="pt-4 pb-6">
           <p
-            class="text-custom-content md:w-full md:max-w-md md:text-justify break-words"
+            class="text-custom-content md:w-full md:max-w-md md:text-justify break-words lg:text-lg"
           >
             I'm Web Developer from South Tangerang, Indonesia, I'm currently
             focused on tech for building web-based app from scratch, such as
@@ -80,15 +80,15 @@
 </template>
 
 <script>
-  export default {}
+export default {};
 </script>
 
 <style>
-  .vue-typer .custom.char.typed {
-    color: #fff;
-  }
-  .vue-typer .custom.caret {
-    width: 5px;
-    background-color: #10b981;
-  }
+.vue-typer .custom.char.typed {
+  color: #fff;
+}
+.vue-typer .custom.caret {
+  width: 5px;
+  background-color: #10b981;
+}
 </style>

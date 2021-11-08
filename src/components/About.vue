@@ -17,7 +17,7 @@
           class="object-cover h-full w-full"
         />
       </div>
-      <div class="mx-auto pb-1">
+      <div class="mx-auto pb-1 lg:text-xl lg:tracking-normal lg:leading-normal">
         Hello there Internet Fellas!
         <img
           src="@/assets/image/waving-hand-joypixels.gif"
@@ -25,17 +25,19 @@
           class="inline w-5 pb-2"
         />
       </div>
-      <div class="tracking-tighter leading-tight">
+      <div class="tracking-tighter leading-tight lg:text-lg lg:tracking-normal">
         <p class="px-4 pb-3">
           My name is Ridho Danang Sanyoto, Well known as Mas Danang, but people
-          also call me Iyoy, My intrest on web development was started when I
-          was junior high school student, Maybe because I spent a lot of time on
-          Internet Caffe back then, So I choose Software Engineering for my
-          Vocational High School Majority to learn more about it, and finaly
-          start using Framework when I develop my final assigment for Bachelor
-          Degree.
+          also call me Iyoy, born on late April 1999, I love matrial arts,
+          playing games, and anything that realted to tech, especially when I
+          have to built it from scratch, because with that way I can figure how
+          it works, My intrest on web development was started when I was junior
+          high school student, Maybe because I spent a lot of time at Internet
+          Caffe back then, So I choose Software Engineering for my Vocational
+          High School Majority to learn more about it, and finaly start using
+          Framework when I develop my final assigment for Bachelor Degree.
         </p>
-        <div class="px-4 flex flex-col text-sm tracking-normal">
+        <div class="px-4 flex flex-col text-sm tracking-normal lg:text-lg">
           <span>Language, Tools, Plugin, and Concept :</span>
           <div class="flex flex-row justify-between pb-2">
             <ul class="list-inside list-disc">
@@ -54,11 +56,11 @@
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">Vue</span>
               </li>
+            </ul>
+            <ul class="list-inside list-disc">
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">Nuxt</span>
               </li>
-            </ul>
-            <ul class="list-inside list-disc">
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">Laravel</span>
               </li>
@@ -71,19 +73,13 @@
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">Nginx</span>
               </li>
+            </ul>
+            <ul class="list-inside list-disc">
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">Apache</span>
               </li>
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">VSCode</span>
-              </li>
-            </ul>
-            <ul class="list-inside list-disc">
-              <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">ESLint</span>
-              </li>
-              <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">Prettier</span>
               </li>
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">MySQL</span>
@@ -94,17 +90,8 @@
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">Linux</span>
               </li>
-              <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">Sanctum</span>
-              </li>
             </ul>
             <ul class="list-inside list-disc">
-              <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">Spatie</span>
-              </li>
-              <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">Vuex</span>
-              </li>
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">AWS S3</span>
               </li>
@@ -122,7 +109,7 @@
   </div>
 </template>
 <script>
-  export default {}
+export default {};
 </script>
 
 <style scoped></style>
