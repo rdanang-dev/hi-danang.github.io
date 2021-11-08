@@ -114,7 +114,7 @@
             >Home</a
           >
           <a
-            v-scroll-to="'#about'"
+            v-scroll-to="{ el: '#about', offset: -40 }"
             href="#"
             class="py-4 px-2 font-semibold"
             :class="posititon == 'about' ? isActive.true : isActive.false"
@@ -224,21 +224,21 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        posititon: "home",
-        open: false,
-        isActive: {
-          false: [
-            "text-gray-300",
-            "hover:text-green-500",
-            "transition",
-            "duration-300",
-          ],
-          true: ["text-green-500", "border-b-4", "border-green-500"],
-        },
-      }
-    },
-  }
+export default {
+  data() {
+    return {
+      posititon: "home",
+      open: false,
+      isActive: {
+        false: [
+          "text-gray-300",
+          "hover:text-green-500",
+          "transition",
+          "duration-300",
+        ],
+        true: ["text-green-500", "border-b-4", "border-green-500"],
+      },
+    };
+  },
+};
 </script>
