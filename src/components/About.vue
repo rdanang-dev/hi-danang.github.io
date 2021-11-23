@@ -37,7 +37,9 @@
           High School Majority to learn more about it, and finaly start using
           Framework when I develop my final assigment for Bachelor Degree.
         </p>
-        <div class="px-4 flex flex-col text-sm tracking-normal lg:text-lg">
+        <div
+          class="px-4 flex flex-col text-xs sm:text-sm tracking-normal lg:text-lg"
+        >
           <span>Language, Tools and Concept :</span>
           <div class="flex flex-row justify-between pb-2">
             <ul class="list-inside list-disc">
@@ -51,18 +53,21 @@
                 <span class="-ml-2 text-custom-content">PHP</span>
               </li>
               <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">Javascript</span>
+                <span class="-ml-2 text-custom-content">JavaScript</span>
               </li>
               <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">Vue</span>
+                <span class="-ml-2 text-custom-content">TypeScript</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Laravel</span>
               </li>
             </ul>
             <ul class="list-inside list-disc">
               <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">Nuxt</span>
+                <span class="-ml-2 text-custom-content">NodeJS</span>
               </li>
               <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">Laravel</span>
+                <span class="-ml-2 text-custom-content">NestJS</span>
               </li>
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">Tailwind</span>
@@ -71,21 +76,27 @@
                 <span class="-ml-2 text-custom-content">Bootstrap</span>
               </li>
               <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">Nginx</span>
+                <span class="-ml-2 text-custom-content">VueJS</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">NuxtJS</span>
               </li>
             </ul>
             <ul class="list-inside list-disc">
               <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">Apache</span>
-              </li>
-              <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">VSCode</span>
-              </li>
-              <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">MySQL</span>
               </li>
               <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">Windows</span>
+                <span class="-ml-2 text-custom-content">Postgre</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">MongoDB</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">Nginx</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">VSCode</span>
               </li>
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">Linux</span>
@@ -93,13 +104,23 @@
             </ul>
             <ul class="list-inside list-disc">
               <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">AWS S3</span>
+                <span class="-ml-2 text-custom-content"
+                  >Git, Github, GitLab</span
+                >
               </li>
               <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">SPA</span>
+                <span class="-ml-2 text-custom-content">Postman, Swagger</span>
               </li>
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">REST API</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content">SPA & PWA</span>
+              </li>
+              <li class="text-green-500">
+                <span class="-ml-2 text-custom-content"
+                  >Cloud Storage (S3)</span
+                >
               </li>
             </ul>
           </div>
