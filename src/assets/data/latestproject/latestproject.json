@@ -1,10 +1,9 @@
 {
-"data": [
+  "data": [
     {
       "image": "wikopos.png",
       "title": "WikoPOS",
-      "desc":
-        "Wisata Kopi Point of Sales, Web-Based App for managing Transaction Data and Products, Print Invoice, See or Print the Daily, Weekly, Monthly or Yearly income.",
+      "desc": "Wisata Kopi Point of Sales, Web-Based App for managing Transaction Data and Products, Print Invoice, See or Print the Daily, Weekly, Monthly or Yearly income.",
       "tags": [
         "VueJS",
         "TailwindCSS",
@@ -15,28 +14,26 @@
         "Material Design Icons",
         "Vue Toast",
         "Sweet Alert"
-      ],      
-      "frontend" : "https://www.youtube.com/watch?v=4gZuyLVo_7A",
-      "backend" : "https://www.youtube.com/watch?v=4gZuyLVo_7A",
-      "demo" : "https://www.youtube.com/watch?v=4gZuyLVo_7A"
+      ],
+      "frontend": "https://github.com/rdanang-dev/vue-wiko-pos",
+      "backend": "https://github.com/rdanang-dev/laravel-wiko-pos",
+      "demo": "https://www.youtube.com/watch?v=4gZuyLVo_7A"
     },
     {
       "image": "art3mis.png",
       "title": "Art3mis",
-      "desc":
-        "Battle color by tapping on your side, inspired by FingerBattle on Appstore by Rafael Rzendaal, named from Ready Player One Character Art3mis.",
+      "desc": "Battle color by tapping on your side, inspired by FingerBattle on Appstore by Rafael Rzendaal, named from Ready Player One Character Art3mis.",
       "tags": ["VueJS", "TailwindCSS"],
       "links": "https://rdanang-dev.github.io/art3mis/",
-      "frontend" : "https://github.com/rdanang-dev/art3mis"      
+      "frontend": "https://github.com/rdanang-dev/art3mis"
     },
     {
       "image": "matics.png",
       "title": "Matics",
-      "desc":
-        "Web-based Voice Recognition App for turning your voice into text.",
+      "desc": "Web-based Voice Recognition App for turning your voice into text.",
       "tags": ["VueJS", "TailwindCSS", "Vue-Toasted"],
       "links": "https://rdanang-dev.github.io/matics/",
-      "frontend" : "https://github.com/rdanang-dev/matics"
+      "frontend": "https://github.com/rdanang-dev/matics"
     }
   ]
 }
