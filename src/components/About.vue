@@ -30,9 +30,9 @@
           My name is Ridho Danang Sanyoto, Well known as Mas Danang, but people
           also call me Iyoy, born on late April 1999, I love matrial arts,
           playing games, and anything that realted to tech, especially when I
-          have to built it from scratch, because with that way I can figure how
-          it works, My intrest on web development was started when I was junior
-          high school student, Maybe because I spent a lot of time at Internet
+          have to built it from scratch, because with that way I know how it
+          works, My intrest on Web Development was started when I was Junior
+          High School Student, Maybe because I spent a lot of time at Internet
           Caffe back then, So I choose Software Engineering for my Vocational
           High School Majority to learn more about it, and finaly start using
           Framework when I develop my final assigment for Bachelor Degree.
