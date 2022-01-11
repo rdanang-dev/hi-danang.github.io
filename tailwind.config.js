@@ -1,4 +1,4 @@
-const defaultTheme = require("tailwindcss/defaultTheme")
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   purge: ["./public/index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         mono: ["ChakraPetch", defaultTheme.fontFamily.mono],
+        // mono: ["VT323", defaultTheme.fontFamily.mono],
       },
       listStyleType: {
         square: "square",
@@ -24,4 +25,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};

@@ -8,4 +8,10 @@
       font-weight: 500;      
       src: url(../fonts/ChakraPetch-Light.ttf);
     }
+
+  @font-face {
+      font-family: "VT323";
+      font-weight: 500;      
+      src: url(../fonts/VT323-Regular.ttf);
+    }
 }
