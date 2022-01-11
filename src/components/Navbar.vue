@@ -18,7 +18,7 @@
         <!-- Burger Menu -->
         <div class="md:hidden flex items-center">
           <button
-            class="bg-black w-10 h-10 relative focus:outline-none"
+            class="text-green-500 w-10 h-10 relative focus:outline-none"
             @click="open = !open"
           >
             <div
@@ -35,7 +35,7 @@
               <span
                 aria-hidden="true"
                 class="
-                  bg-white
+                  text-green-500
                   block
                   absolute
                   h-0.5
@@ -51,7 +51,7 @@
               <span
                 aria-hidden="true"
                 class="
-                  bg-white
+                  text-green-500
                   block
                   absolute
                   h-0.5
