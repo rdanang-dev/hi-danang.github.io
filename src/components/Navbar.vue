@@ -67,7 +67,7 @@
               <span
                 aria-hidden="true"
                 class="
-                  bg-white
+                  text-green-500
                   block
                   absolute
                   h-0.5
