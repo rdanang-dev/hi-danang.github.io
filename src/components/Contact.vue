@@ -188,12 +188,12 @@
             </div>
           </form>
         </div>
-        <div class="flex flex-col mt-10 pl-2 space-y-2">
-          <a href="https://www.facebook.com/ridho.iyoy" target="blank">
+        <div class="flex flex-col mt-14 pl-2 space-y-2">
+          <a href="https://github.com/rdanang-dev" target="blank">
             <font-awesome-icon
-              :icon="['fab', 'facebook-square']"
+              :icon="['fab', 'github-square']"
               class="fa-3x"
-              style="color: #1877F2;"
+              style="color: #181717;"
             />
           </a>
           <a href="https://www.instagram.com/ikan_gondrong" target="blank">
@@ -203,15 +203,8 @@
               style="color: #E4405F;"
             />
           </a>
-          <a href="https://github.com/rdanang-dev" target="blank">
-            <font-awesome-icon
-              :icon="['fab', 'github-square']"
-              class="fa-3x"
-              style="color: #181717;"
-            />
-          </a>
           <a
-            href="https://wa.me/+6285891728757?text=Hallo%20Danang%2C%20I%20liked%20to%20use%20your%20service%2C%20please%20contact%20me%20at%20%2E%2E%2E%2E%2E"
+            href="https://wa.me/+6285718530636?text=Hallo%20Danang%2C%20I%20liked%20to%20use%20your%20service%2C%20please%20contact%20me%20at%20%2E%2E%2E%2E%2E"
             target="blank"
           >
             <font-awesome-icon
@@ -244,103 +237,103 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        formBind: {
-          name: "",
-          email: "",
-          subject: "",
-          content: "",
-        },
-        errors: {
-          data: [],
-        },
+export default {
+  data() {
+    return {
+      formBind: {
+        name: "",
+        email: "",
+        subject: "",
+        content: "",
+      },
+      errors: {
+        data: [],
+      },
+    }
+  },
+  methods: {
+    async onSubmit() {
+      this.validate()
+      if (Object.keys(this.errors.data).length !== 0) {
+        this.$toasted.error("Oops, Something Went Wrong!", {
+          duration: 1500,
+          position: "bottom-right",
+        })
+      } else {
+        await this.submitForm()
+        this.formBind = {}
+        this.formBind.content = ""
       }
     },
-    methods: {
-      async onSubmit() {
-        this.validate()
-        if (Object.keys(this.errors.data).length !== 0) {
-          this.$toasted.error("Oops, Something Went Wrong!", {
-            duration: 1500,
-            position: "bottom-right",
-          })
-        } else {
-          await this.submitForm()
-          this.formBind = {}
-          this.formBind.content = ""
-        }
-      },
 
-      validate() {
-        this.errors.data = {}
-        if (this.formBind.name === "") {
-          this.errors.data.name = "Name field is required!"
+    validate() {
+      this.errors.data = {}
+      if (this.formBind.name === "") {
+        this.errors.data.name = "Name field is required!"
+      }
+      if (this.formBind.email === "") {
+        this.errors.data.email = "Email field is required!"
+      } else {
+        const validate = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(
+          this.formBind.email.toLowerCase()
+        )
+        if (!validate) {
+          this.errors.data.email = "Incorrect email format!"
         }
-        if (this.formBind.email === "") {
-          this.errors.data.email = "Email field is required!"
-        } else {
-          const validate = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(
-            this.formBind.email.toLowerCase()
-          )
-          if (!validate) {
-            this.errors.data.email = "Incorrect email format!"
-          }
-        }
-        if (this.formBind.subject === "") {
-          this.errors.data.subject = "Subject field is required!"
-        }
-        if (this.formBind.content === "") {
-          this.errors.data.content = "Content field is required!"
-        }
-      },
-
-      async submitForm() {
-        const formData = new FormData()
-        for (const key in this.formBind) {
-          if (this.formBind[key]) {
-            formData.append(key, this.formBind[key])
-          }
-        }
-        formData.append("_next", "/#content")
-        formData.append("_captcha", false)
-        await this.sentMail(formData)
-      },
-
-      async sentMail(payload) {
-        try {
-          await this.axios.post(
-            "https://formsubmit.co/rdanang.dev@gmail.com",
-            payload
-          )
-          this.$toasted.success("Message Sent!", {
-            duration: 1500,
-            position: "bottom-right",
-          })
-        } catch (error) {
-          console.log(error)
-          this.$toasted.error("Oops, Something Went Wrong!", {
-            duration: 1500,
-            position: "bottom-right",
-          })
-        }
-      },
+      }
+      if (this.formBind.subject === "") {
+        this.errors.data.subject = "Subject field is required!"
+      }
+      if (this.formBind.content === "") {
+        this.errors.data.content = "Content field is required!"
+      }
     },
-  }
+
+    async submitForm() {
+      const formData = new FormData()
+      for (const key in this.formBind) {
+        if (this.formBind[key]) {
+          formData.append(key, this.formBind[key])
+        }
+      }
+      formData.append("_next", "/#content")
+      formData.append("_captcha", false)
+      await this.sentMail(formData)
+    },
+
+    async sentMail(payload) {
+      try {
+        await this.axios.post(
+          "https://formsubmit.co/rdanang.dev@gmail.com",
+          payload
+        )
+        this.$toasted.success("Message Sent!", {
+          duration: 1500,
+          position: "bottom-right",
+        })
+      } catch (error) {
+        console.log(error)
+        this.$toasted.error("Oops, Something Went Wrong!", {
+          duration: 1500,
+          position: "bottom-right",
+        })
+      }
+    },
+  },
+}
 </script>
 
 <style scoped>
-  .fa-3x {
-    background-image: linear-gradient(
-      to bottom,
-      transparent 10%,
-      white 20%,
-      white 93%,
-      transparent 1%
-    );
-    background-size: 83%;
-    background-position: 60% 0;
-    background-repeat: no-repeat;
-  }
+.fa-3x {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 10%,
+    white 20%,
+    white 93%,
+    transparent 1%
+  );
+  background-size: 83%;
+  background-position: 60% 0;
+  background-repeat: no-repeat;
+}
 </style>
