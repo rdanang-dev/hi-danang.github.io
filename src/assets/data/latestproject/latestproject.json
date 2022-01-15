@@ -4,7 +4,7 @@
       "image": "elroi.png",
       "title": "Elroi Church",
       "desc": "Webapp for Elroi Church, a Christian church located at sawangan.",
-      "backendRole": "Creating Api for Elroi Church, and Elroi Church Admin, Moving app from typegoose to mongoose using the Official NestJS, Creating DTO, Api Docs with swagger, compodoc and postman, implementing repository design pattern, create giving feature using Mitrans Payment Gateway, Deploy App to the server.",
+      "backendRole": "Creating Api for Elroi Church, and Elroi Church Admin, Change the orm of the app from typegoose to mongoose, Creating Api Documentation with swagger, compodoc and postman, implementing dto and repository design pattern, create giving feature using Mitrans Payment Gateway, Deploy App to the server.",
       "tags": [
         "NestJS",
         "Firebase Storage",
@@ -19,9 +19,9 @@
     {
       "image": "wikopos.png",
       "title": "WikoPOS",
-      "desc": "Wisata Kopi Point of Sales, Web-Based App for managing Transaction Data and Products, Print Invoice, See or Print the Daily, Weekly, Monthly or Yearly income.",
+      "desc": "Web based Point of Sales App for managing retail business.",
       "backendRole": "Create Api manjorly for Crud Operation, and store products image to AWS S3, Create Login with Laravel Sanctum, perform query to generate report and invoice.",
-      "frontendRole": "Create interactive and responsive interface with Vue, and TailwindCSS.",
+      "frontendRole": "Create interactive and responsive web app interface using VueJS and TailwindCSS, using some library like chart.js sweet alert and etc, fetch data from api with axios and manage it with state management, create functions to print invoice",
       "tags": [
         "VueJS",
         "TailwindCSS",
@@ -38,13 +38,13 @@
       "demo": "https://www.youtube.com/watch?v=4gZuyLVo_7A"
     },
     {
-      "image": "matics.png",
-      "title": "Matics",
-      "desc": "Web-based Voice Recognition App for turning your voice into text.",
-      "frontendRole": "Create interactive and responsive interface with Vue, and TailwindCSS.",
+      "image": "art3mis.png",
+      "title": "Art3mis",
+      "desc": "Battle color by tap, inspired by FingerBattle on Appstore by Rafael Rzendaal, named from Ready Player One Character Art3mis",
+      "frontendRole": "Create web-based game with interactive and responsive interface using Vue, and TailwindCSS.",
       "tags": ["VueJS", "TailwindCSS", "Vue-Toasted"],
-      "links": "https://rdanang-dev.github.io/matics/",
-      "frontend": "https://github.com/rdanang-dev/matics"
+      "links": "https://rdanang-dev.github.io/art3mis/",
+      "frontend": "https://github.com/rdanang-dev/art3mis"
     }
   ]
 }
