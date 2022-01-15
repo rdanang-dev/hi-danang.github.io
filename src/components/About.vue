@@ -118,9 +118,7 @@
                 <span class="-ml-2 text-custom-content">SPA & PWA</span>
               </li>
               <li class="text-green-500">
-                <span class="-ml-2 text-custom-content"
-                  >S3 / GCP / FirebaseStorage</span
-                >
+                <span class="-ml-2 text-custom-content">AWS S3 / GCP </span>
               </li>
             </ul>
           </div>
