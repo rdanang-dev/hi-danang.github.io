@@ -60,6 +60,14 @@
             class="text-justify leading-tight tracking-tighter lg:leading-normal py-2 lg:pt-5 text-custom-content"
           >
             <p>{{ value.desc }}</p>
+            <div v-if="value.backendRole">
+              <span class="block pt-2">Backend Role:</span>
+              <p>{{ value.backendRole }}</p>
+            </div>
+            <div v-if="value.frontendRole">
+              <span class="block pt-2">FrontEnd Role:</span>
+              <p>{{ value.frontendRole }}</p>
+            </div>
             <div class="space-x-1 space-y-1 max-w-64 pb-14 lg:pb-0">
               <span class="block py-2">Tags:</span>
               <span
@@ -105,13 +113,13 @@
 </template>
 
 <script>
-  import projectData from "../assets/data/latestproject/latestproject.json"
-  export default {
-    name: "LatestProject",
-    data() {
-      return {
-        data: projectData.data,
-      }
-    },
-  }
+import projectData from "../assets/data/latestproject/latestproject.json";
+export default {
+  name: "LatestProject",
+  data() {
+    return {
+      data: projectData.data,
+    };
+  },
+};
 </script>
