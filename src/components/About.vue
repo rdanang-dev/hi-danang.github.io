@@ -119,7 +119,7 @@
               </li>
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content"
-                  >Cloud Storage (S3)</span
+                  >S3 / GCP / FirebaseStorage</span
                 >
               </li>
             </ul>
