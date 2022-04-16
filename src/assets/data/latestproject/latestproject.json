@@ -38,13 +38,15 @@
       "demo": "https://www.youtube.com/watch?v=4gZuyLVo_7A"
     },
     {
-      "image": "art3mis.png",
-      "title": "Art3mis",
-      "desc": "Battle color by tap, inspired by FingerBattle on Appstore by Rafael Rzendaal, named from Ready Player One Character Art3mis",
-      "frontendRole": "Create web-based game with interactive and responsive interface using Vue, and TailwindCSS.",
+      "image": "benefits_indonesia.png",
+      "title": "Benefits Indonesia",
+      "desc": "Dating App for Indonesian Couples.",
+      "frontendRole": "Create web-based app for administrative purposes (accepting and rejecting profile verification/user reports, crud coins/plans), create architecure hierarchy for storing state management, entity, enums, and etc, creating forgot and reset password pages, creating download apps page on landing page sites.",
+      "backendRole": "Implementing repository design pattern (controller, service, repository, dto, etc), create plan and features crud for integrations use in payment gateway, creating services for login with jwt auth, fixing bugs, creating mailing services for notify user about profile verification and reset passwords.",
+      "devopsRole": "Creating shell script to deploy app to the server including (pulling last changes from git, installing dependencies, re-building apps, restaring pm2 services.",
       "tags": ["VueJS", "TailwindCSS", "Vue-Toasted"],
-      "links": "https://rdanang-dev.github.io/art3mis/",
-      "frontend": "https://github.com/rdanang-dev/art3mis"
+      "links": "https://benefits.co.id/",
+      "demo": "https://youtube.com/watch?v=TIb8dPmRYCU"
     }
   ]
 }
