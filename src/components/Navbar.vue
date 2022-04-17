@@ -3,7 +3,7 @@
   <nav
     class="fixed bottom-0 left-0 w-full md:sticky md:top-0 z-40 md:pt-1 bg-black md:bg-custom-background"
   >
-    <div class="flex flex-col-reverse md:max-w-8xl md:mx-auto">
+    <div class="flex flex-col-reverse md:max-w-7xl md:mx-auto">
       <div class="flex justify-between">
         <!-- Burger Menu -->
         <div class="md:hidden flex items-center">
