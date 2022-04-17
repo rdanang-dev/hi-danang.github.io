@@ -32,17 +32,26 @@
         v-for="(value, index) in data"
         :key="index"
       >
-        <a :href="value.links ? value.links : value.demo" target="_blank">
-          <img
-            :src="require(`@/assets/image/projects/${value.image}`)"
-            class="w-full h-60 lg:h-full rounded-t-3xl border border-green-500 object-center"
-            :class="
-              (index + 1) % 2 === 0
-                ? ['lg:rounded-br-3xl lg:rounded-t-none lg:rounded-tr-3xl']
-                : ['lg:rounded-bl-3xl lg:rounded-t-none lg:rounded-tl-3xl']
-            "
-          />
-        </a>
+        <!-- class="w-full h-60 lg:h-full rounded-t-3xl border border-green-500 object-center" -->
+        <div
+          class="flex h-full w-full items-center border border-green-500"
+          :class="
+            (index + 1) % 2 === 0
+              ? ['lg:rounded-br-3xl lg:rounded-t-none lg:rounded-tr-3xl']
+              : ['lg:rounded-bl-3xl lg:rounded-t-none lg:rounded-tl-3xl']
+          "
+        >
+          <a
+            :href="value.links ? value.links : value.demo"
+            target="_blank"
+            class="w-full"
+          >
+            <img
+              :src="require(`@/assets/image/projects/${value.image}`)"
+              class="w-full object-center"
+            />
+          </a>
+        </div>
         <div
           class="flex flex-col px-3 pt-2 border-dashed lg:border-t border-b border-l border-r rounded-bl-3xl rounded-br-3xl border-green-500 relative lg:w-7/12"
           :class="
@@ -55,20 +64,26 @@
                 ]
           "
         >
-          <span class="text-custom-title text-2xl">{{ value.title }}</span>
+          <span class="text-custom-title text-3xl">{{ value.title }}</span>
+          <p class="text-custom-content">{{ value.desc }}</p>
           <div
-            class="text-justify leading-tight tracking-tighter lg:leading-normal py-2 lg:pt-5 text-custom-content"
+            class="text-justify leading-relaxed text-base font-normal py-2 lg:pt-5 text-custom-content px-3"
           >
-            <p>{{ value.desc }}</p>
             <div v-if="value.backendRole">
-              <span class="block pt-2">Backend Role:</span>
-              <p>{{ value.backendRole }}</p>
+              <span class="block pt-2">Backend Roles:</span>
+              <p style="text-indent: 2em">
+                {{ value.backendRole }}
+              </p>
             </div>
             <div v-if="value.frontendRole">
-              <span class="block pt-2">FrontEnd Role:</span>
-              <p>{{ value.frontendRole }}</p>
+              <span class="block pt-2">FrontEnd Roles:</span>
+              <p style="text-indent: 2em">{{ value.frontendRole }}</p>
             </div>
-            <div class="space-x-1 space-y-1 max-w-64 pb-14 lg:pb-0">
+            <div v-if="value.devopsRole">
+              <span class="block pt-2">DevOps Roles:</span>
+              <p style="text-indent: 2em">{{ value.devopsRole }}</p>
+            </div>
+            <div class="space-x-1 space-y-1 max-w-64 pb-14 lg:pb-16">
               <span class="block py-2">Tags:</span>
               <span
                 v-for="tag in value.tags"
@@ -113,9 +128,9 @@
 </template>
 
 <script>
-import projectData from "../assets/data/latestproject/latestproject.json";
+import projectData from '../assets/data/latestproject/latestproject.json';
 export default {
-  name: "LatestProject",
+  name: 'LatestProject',
   data() {
     return {
       data: projectData.data,

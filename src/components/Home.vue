@@ -13,25 +13,12 @@
         erase-style="backspace"
         :erase-on-complete="false"
         caret-animation="expand"
-        class="                                 
-            text-3xl                    
-            sm:text-5xl
-            md:text-6xl
-            lg:text-7xl
-            xl:text-8xl xl:py-4 xl:-m-2
-            font-medium
-          "
+        class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl xl:py-4 xl:-m-2 font-medium"
       ></vue-typer>
       <!-- <div class="w-full border border-red-400"> -->
       <div class="w-full">
         <span
-          class="
-          text-custom-content text-xl                
-          sm:text-4xl
-          md:text-5xl
-          xl:text-6xl
-          md:pt-3
-        "
+          class="text-custom-content text-xl sm:text-4xl md:text-5xl xl:text-6xl md:pt-3"
         >
           I Build Things from Scratch.</span
         >
@@ -48,29 +35,36 @@
               >Laravel</a
             >,
             <a
+              href="https://nestjs.com/"
+              target="_blank"
+              class="text-green-500 hover:underline"
+              >NestJS</a
+            >,
+            <a
               target="_blank"
               class="text-green-500 hover:underline"
               href="https://vuejs.org/"
-              >Vue JS</a
-            >, and
+              >VueJS</a
+            >,
+            <a
+              target="_blank"
+              class="text-green-500 hover:underline"
+              href="https://reactjs.org/"
+              >ReactJS</a
+            >
+            , and
             <a
               target="_blank"
               class="text-green-500 hover:underline"
               href="https://tailwindcss.com/"
               >TailwindCSS</a
-            >.
+            >
           </p>
         </div>
         <a
           v-scroll-to="{ el: '#contact', offset: -40 }"
           href="#"
-          class="
-          border border-green-500
-          text-green-500
-          p-3
-          max-w-max
-          hover:border-green-300 hover:text-green-300
-        "
+          class="border border-green-500 text-green-500 p-3 max-w-max hover:border-green-300 hover:text-green-300"
         >
           Get in Touch
         </a>

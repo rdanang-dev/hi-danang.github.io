@@ -35,7 +35,8 @@
           High School Student, Maybe because I spent a lot of time at Internet
           Caffe back then, So I choose Software Engineering for my Vocational
           High School Majority to learn more about it, and finaly start using
-          Framework when I develop my final assigment for Bachelor Degree.
+          Framework when I develop my final assigment for Bachelor Degree, I may
+          not good at competitive programming, but i got the job done anyway.
         </p>
         <div
           class="px-4 flex flex-col text-xs sm:text-sm tracking-normal lg:text-lg"
@@ -58,36 +59,27 @@
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">TypeScript</span>
               </li>
-              <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">Laravel</span>
-              </li>
             </ul>
             <ul class="list-inside list-disc">
               <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">NodeJS</span>
+                <span class="-ml-2 text-custom-content">Laravel</span>
               </li>
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">NestJS</span>
               </li>
               <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">Tailwind</span>
+                <span class="-ml-2 text-custom-content">TailwindCSS</span>
               </li>
               <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">Bootstrap</span>
+                <span class="-ml-2 text-custom-content">React/Vue</span>
               </li>
               <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">VueJS</span>
-              </li>
-              <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">NuxtJS</span>
+                <span class="-ml-2 text-custom-content">Next/Nuxt</span>
               </li>
             </ul>
             <ul class="list-inside list-disc">
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">MySQL</span>
-              </li>
-              <li class="text-green-500">
-                <span class="-ml-2 text-custom-content">Postgre</span>
               </li>
               <li class="text-green-500">
                 <span class="-ml-2 text-custom-content">MongoDB</span>
