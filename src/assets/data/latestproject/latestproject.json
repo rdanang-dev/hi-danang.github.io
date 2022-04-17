@@ -4,7 +4,7 @@
       "image": "wazone.png",
       "title": "WaZone",
       "desc": "Web base app for blasting, and creating bot whatsapp.",
-      "backendRole": "Creating API with repository design pattern architecture (controller, service, repository, dto/dio), manjorly for Crud Operation, creating services for storing files at GCP (Google Clod Platform) and Firebase, Create Login with JwtServices, Implement Two Factor Authentication (2FA) with TOTP Algorithm (Google/Microsoft Authenticator), Create API docs with swagger and compodoc, creating services for sending e-mail, creating socket to listen whatsapp connection, creating bot feature.",
+      "backendRole": "Creating API with repository design pattern architecture (controller, service, repository, dto/dio), manjorly for Crud Operation, creating services for storing files at GCP (Google Cloud Platform) and Firebase, Create Login with JwtServices, Implement Two Factor Authentication (2FA) with TOTP Algorithm (Google/Microsoft Authenticator), Create API docs with swagger and compodoc, creating services for sending e-mail, creating socket to listen whatsapp connection, creating bot feature.",
       "frontendRole": "Create interactive and responsive web app interface using React Typescript and TailwindCSS, fetch data from api with axios and manage it with state management, creating socket listener to get events from backend, creating otp feature to match the code from user and the authenticator, create forgot password and reset password.",
       "devopsRole": "Creating shell script to deploy app to the server including go to project repository, pulling last changes from github/gitlab, installing dependencies, building app, restaring pm2 services, split api for staging and production.",
       "tags": [

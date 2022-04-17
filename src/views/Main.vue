@@ -23,39 +23,39 @@
 </template>
 
 <script>
-  import Navbar from "../components/Navbar.vue"
-  import Home from "../components/Home.vue"
-  import About from "../components/About.vue"
-  import Contact from "../components/Contact.vue"
-  import LatestProject from "../components/LatestProject.vue"
-  export default {
-    name: "Main",
-    components: { Navbar, Home, About, Contact, LatestProject },
-  }
+import Navbar from '../components/Navbar.vue';
+import Home from '../components/Home.vue';
+import About from '../components/About.vue';
+import Contact from '../components/Contact.vue';
+import LatestProject from '../components/LatestProject.vue';
+export default {
+  name: 'Main',
+  components: { Navbar, Home, About, Contact, LatestProject },
+};
 </script>
 
 <style>
-  body {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    max-height: 10px;
-  }
-  body::-webkit-scrollbar {
-    width: 8px; /* width of the entire scrollbar */
-  }
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 10px;
+}
+body::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
 
-  body::-webkit-scrollbar-track {
-    background: #09182f; /* color of the tracking area */
-  }
+body::-webkit-scrollbar-track {
+  background: #09182f; /* color of the tracking area */
+}
 
-  body::-webkit-scrollbar-thumb {
-    background-color: rgba(16, 185, 129, 0.8); /* color of the scroll thumb */
-    border-radius: 8px; /* roundness of the scroll thumb */
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-    height: 10px;
-  }
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(16, 185, 129, 0.8); /* color of the scroll thumb */
+  border-radius: 8px; /* roundness of the scroll thumb */
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  height: 10px;
+}
 
-  .font-mono .text-8xl {
-    word-spacing: -0.4ch;
-  }
+.font-mono .text-8xl {
+  word-spacing: -0.4ch;
+}
 </style>

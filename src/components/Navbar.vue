@@ -1,19 +1,9 @@
 <template>
   <!-- Navbar goes here -->
   <nav
-    class="
-      fixed
-      bottom-0
-      left-0
-      w-full
-      md:sticky md:top-0
-      z-40
-      md:max-w-7xl md:mx-auto md:pt-1
-      bg-black
-      md:bg-custom-background
-    "
+    class="fixed bottom-0 left-0 w-full md:sticky md:top-0 z-40 md:pt-1 bg-black md:bg-custom-background"
   >
-    <div class="flex flex-col-reverse">
+    <div class="flex flex-col-reverse md:max-w-8xl md:mx-auto">
       <div class="flex justify-between">
         <!-- Burger Menu -->
         <div class="md:hidden flex items-center">
@@ -22,62 +12,21 @@
             @click="open = !open"
           >
             <div
-              class="
-                block
-                w-5
-                absolute
-                left-1/2
-                top-1/2
-                transform
-                -translate-x-1/2 -translate-y-1/2
-              "
+              class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
             >
               <span
                 aria-hidden="true"
-                class="
-                  text-green-500
-                  block
-                  absolute
-                  h-0.5
-                  w-5
-                  bg-current
-                  transform
-                  transition
-                  duration-500
-                  ease-in-out
-                "
+                class="text-green-500 block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
                 :class="{ 'rotate-45': open, ' -translate-y-1.5': !open }"
               />
               <span
                 aria-hidden="true"
-                class="
-                  text-green-500
-                  block
-                  absolute
-                  h-0.5
-                  w-5
-                  bg-current
-                  transform
-                  transition
-                  duration-500
-                  ease-in-out
-                "
+                class="text-green-500 block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
                 :class="{ 'opacity-0': open }"
               />
               <span
                 aria-hidden="true"
-                class="
-                  text-green-500
-                  block
-                  absolute
-                  h-0.5
-                  w-5
-                  bg-current
-                  transform
-                  transition
-                  duration-500
-                  ease-in-out
-                "
+                class="text-green-500 block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
                 :class="{ '-rotate-45': open, ' translate-y-1.5': !open }"
               />
             </div>
@@ -92,12 +41,7 @@
                 alt="mini_logo"
                 class="rounded-full w-10 border-2 border-green-500"
               />
-              <span
-                class="
-                  font-semibold
-                  text-gray-300 text-lg                  
-                  pl-2
-                "
+              <span class="font-semibold text-gray-300 text-lg pl-2"
                 >RDanang</span
               >
             </a>
@@ -227,16 +171,16 @@
 export default {
   data() {
     return {
-      posititon: "home",
+      posititon: 'home',
       open: false,
       isActive: {
         false: [
-          "text-gray-300",
-          "hover:text-green-500",
-          "transition",
-          "duration-300",
+          'text-gray-300',
+          'hover:text-green-500',
+          'transition',
+          'duration-300',
         ],
-        true: ["text-green-500", "border-b-4", "border-green-500"],
+        true: ['text-green-500', 'border-b-4', 'border-green-500'],
       },
     };
   },
