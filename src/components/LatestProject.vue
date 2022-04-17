@@ -22,24 +22,24 @@
         >
         <span> !</span>
       </div>
+      <!-- :class="
+          (index + 1) % 2 === 0 ? ['lg:flex-row-reverse'] : ['lg:flex-row']
+        " -->
 
       <!-- Projects -->
       <div
         class="pt-8 flex flex-col rounded-t-3xl rounded-b-3xl"
-        :class="
-          (index + 1) % 2 === 0 ? ['lg:flex-row-reverse'] : ['lg:flex-row']
-        "
         v-for="(value, index) in data"
         :key="index"
       >
         <!-- class="w-full h-60 lg:h-full rounded-t-3xl border border-green-500 object-center" -->
-        <div
-          class="flex h-full w-full items-center border border-green-500"
-          :class="
+        <!-- :class="
             (index + 1) % 2 === 0
               ? ['lg:rounded-br-3xl lg:rounded-t-none lg:rounded-tr-3xl']
               : ['lg:rounded-bl-3xl lg:rounded-t-none lg:rounded-tl-3xl']
-          "
+          " -->
+        <div
+          class="flex h-full w-full items-center border border-green-500 rounded-t-3xl"
         >
           <a
             :href="value.links ? value.links : value.demo"
@@ -48,21 +48,16 @@
           >
             <img
               :src="require(`@/assets/image/projects/${value.image}`)"
-              class="w-full object-center"
+              class="w-full object-center rounded-t-3xl"
             />
           </a>
         </div>
+        <!-- :class=" (index + 1) % 2 === 0 ? [ 'lg:border-l lg:rounded-tl-3xl
+        lg:rounded-bl-3xl lg:rounded-br-none lg:border-r-0', ] : [ 'lg:border-r
+        lg:rounded-tr-3xl lg:rounded-br-3xl lg:rounded-bl-none lg:border-l-0', ]
+        " -->
         <div
-          class="flex flex-col px-3 pt-2 border-dashed lg:border-t border-b border-l border-r rounded-bl-3xl rounded-br-3xl border-green-500 relative lg:w-7/12"
-          :class="
-            (index + 1) % 2 === 0
-              ? [
-                  'lg:border-l lg:rounded-tl-3xl lg:rounded-bl-3xl lg:rounded-br-none lg:border-r-0',
-                ]
-              : [
-                  'lg:border-r lg:rounded-tr-3xl lg:rounded-br-3xl lg:rounded-bl-none lg:border-l-0',
-                ]
-          "
+          class="flex flex-col px-3 pt-2 border-dashed lg:border-t border-b border-l border-r rounded-bl-3xl rounded-br-3xl border-green-500 relative"
         >
           <span class="text-custom-title text-3xl">{{ value.title }}</span>
           <p class="text-custom-content">{{ value.desc }}</p>

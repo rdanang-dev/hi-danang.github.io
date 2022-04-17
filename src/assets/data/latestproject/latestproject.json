@@ -19,9 +19,7 @@
         "Compodoc",
         "Postman"
       ],
-      "frontend": "https://github.com/rdanang-dev/vue-wiko-pos",
-      "backend": "https://github.com/rdanang-dev/laravel-wiko-pos",
-      "demo": "https://www.youtube.com/watch?v=4gZuyLVo_7A"
+      "links": "https://app.wazone.id"
     },
     {
       "image": "benefits_indonesia.png",
